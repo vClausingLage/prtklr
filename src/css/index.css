@@ -31,6 +31,7 @@ ul {
     color: white;
     text-decoration: none;
     margin: 0rem 1rem 0rem 1rem;
+    font-size: larger;
 }
 .navbar > .left {
     display: inline;
@@ -39,6 +40,7 @@ ul {
     color: white;
     text-decoration: none;
     margin: 0rem 1rem 0rem 1rem;
+    font-size: larger;
 }
 .navbar > *:hover {
     color: rgba(255, 255, 255, 0.5);
@@ -101,15 +103,48 @@ img {
 }
 
 h1:after {
-    background: none repeat scroll 0 0 white;
+    background: none repeat scroll 0 0 rgb(255, 94, 0);
     bottom: -1px;
     content: "";
     display: block;
     height: 0.1rem;
     position: relative;
     width: 22rem;
- }
+}
+    .tableText {    
+    color: white;
+}
 
- .tableText {
-     color: white;
- }
+.navActive {
+    color:rgb(255, 94, 0);
+}
+
+
+
+
+
+
+.navbar {
+    position: inline;
+    height: 0;
+    padding: 2rem 1rem 3.5rem 1rem;
+}
+.navbar > div > .right {
+    display: inline;
+    float: right;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    margin: 0rem 1rem 0rem 1rem;
+}
+.navbar > div > .left {
+    display: inline;
+    float: left;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    margin: 0rem 1rem 0rem 1rem;
+}
+.navbar > div > *:hover {
+    color: rgba(255, 255, 255, 0.5);
+}

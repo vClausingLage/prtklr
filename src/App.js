@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,26 +15,33 @@ import Projekte from './components/projekte'
 //import SchoolIcon from '@material-ui/icons/School'
 //import BuildIcon from '@material-ui/icons/Build'
 
-function activeSet(e){
-  console.log(e.target.value)
-}
-
 const App = () => {
-  const [active, setActive] = useState();
+
+  const tabs = [
+    ["left","/","clausing-lage"],
+    ["right","cv","CV"],
+    ["right","projekte","Projekte"],
+    //["right","skills","Skills"],
+  ]
+
+  function tabClick(index){
+    let n = tabs.length
+    for (let i = 0; i < n; i++) {
+      document.getElementById("links" + i).style.color = "white"
+    }
+    document.getElementById("links" + index).style.color = "rgb(255, 94, 0)"
+  }
+
   return (
     <Router>
       <div style={{height: '100vh'}}>
         <nav className="navbar">
-          <Link className={`left ${active}`} onClick={e => activeSet(e)} to="/home">clausing-lage</Link>
-          <Link className="right" to="/cv">CV</Link>
-          <Link className="right" to="/projekte">Projekte</Link>
-          <Link className="right" to="/skills">Skills</Link>
+        {tabs.map((element, index) =>
+            <Link id={`links${index}`} key={index} className={`${element[0]}`} to={`${element[1]}`} onClick={e => tabClick(index)}>{element[2]}</Link>
+        )}
         </nav>
 
         <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
           <Route path="/skills">
             <Skills />
           </Route>
@@ -43,6 +50,9 @@ const App = () => {
           </Route>
           <Route path="/projekte">
             <Projekte />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
