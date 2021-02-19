@@ -19,9 +19,9 @@ const App = () => {
 
   const tabs = [
     ["left","/","clausing-lage"],
-    ["right","cv","CV"],
+    //["right","cv","CV"],
     ["right","projekte","Projekte"],
-    //["right","skills","Skills"],
+    ["right","skills","Skills"],
   ]
 
   function tabClick(index){
