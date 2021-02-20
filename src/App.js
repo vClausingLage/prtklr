@@ -39,6 +39,7 @@ const App = () => {
         {tabs.map((element, index) =>
             <Link id={`links${index}`} key={index} className={`${element[0]}`} to={`${element[1]}`} onClick={e => tabClick(index)}>{element[2]}</Link>
         )}
+        
         </nav>
 
         <Switch>

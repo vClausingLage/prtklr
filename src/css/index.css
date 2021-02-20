@@ -62,7 +62,6 @@ ul {
 .flex {
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -120,7 +119,12 @@ h1:after {
 }
 
 
-
+.test {                 /* TUT: https://edavis.github.io/2018/02/04/create-an-angled-background-in-css/ */
+    position: absolute;
+    background-image: linear-gradient(176deg, #1c3647 70%, #F4F4F4 calc(70% + 5px));
+    width: 100%;
+    height: 200px;
+}
 
 
 
