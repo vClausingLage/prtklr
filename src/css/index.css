@@ -171,6 +171,7 @@ td {
 
 .card-image {
     max-width: 600px;
+    margin: auto;
 }
 
 .descr {
@@ -178,11 +179,21 @@ td {
 }
 
 .projekte {
-    display: flex;
+    display: grid;
     justify-content: center;
-    margin: 2rem;
+    margin: auto;
 }
 
 .block {
     display: block;
+    margin: auto 0;
+}
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+    color: white;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
 }

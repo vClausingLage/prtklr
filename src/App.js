@@ -9,6 +9,7 @@ import Home from './components/home'
 import Skills from './components/skills'
 import CV from './components/cv'
 import Projekte from './components/projekte'
+import Footer from './components/footer'
 
 //import HomeIcon from '@material-ui/icons/Home'
 //import AccountCircleIcon from '@material-ui/icons/AccountCircle'
@@ -60,6 +61,7 @@ const App = () => {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

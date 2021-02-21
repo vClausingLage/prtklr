@@ -1,9 +1,14 @@
 import React from 'react'
 
-function Footer () {
+function Footer() {
+
+    var today = new Date();
+    var year = today.getFullYear();
+
+
     return (
-        <div>
-            Footer
+        <div className="footer">
+            &copy; clausing-lage {year}
         </div>
     )
 }
