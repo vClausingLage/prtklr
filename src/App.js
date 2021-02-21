@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,6 +31,10 @@ const App = () => {
     }
     document.getElementById("links" + index).style.color = "rgb(255, 94, 0)"
   }
+
+  useEffect(()=> {
+    document.getElementById("links0").style.color = "rgb(255, 94, 0)"
+  })
 
   return (
     <Router>
