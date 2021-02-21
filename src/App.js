@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <Router>
-      <div style={{height: '100vh'}}>
+      <div className="background">
         <nav className="navbar">
         {tabs.map((element, index) =>
             <Link id={`links${index}`} key={index} className={`${element[0]}`} to={`${element[1]}`} onClick={e => tabClick(index)}>{element[2]}</Link>

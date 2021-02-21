@@ -3,16 +3,16 @@ import profile from '../pictures/me1.jpg'
 
 function Home () {
     return (
-        <React.Fragment>
-            <div className="flex" style={{paddingTop: '10rem'}}>
-                <div className="flex-item" style={{marginRight: '10px'}}>
-                    <img src={profile} alt="Profilbild" style={{borderRadius: '50%'}}/>
+        <>
+            <div className="flex profile">
+                <div className="flex-item">
+                    <img src={profile} alt="Profilbild" className="profile-image"/>
                 </div>
-                <div className="flex-item typewriter" style={{marginLeft: '10px'}}>
+                <div className="flex-item typewriter">
                     <p>Herzlich willkommen! <br></br></p>
                 </div>
             </div>
-        </React.Fragment>
+        </>
     )
 }
 

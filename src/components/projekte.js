@@ -1,19 +1,37 @@
 import * as React from 'react'
+import logoSurvey from '../pictures/logoSurvey.png'
+import logoSchule from '../pictures/logoSchule.png'
 
-function Projekte () {
+function Projekte() {
+
+    const descrSurvey = 'App zum Erstellen, Versenden und Auswerten von Umfragebögen'
+    const techSurvey = 'ReactJS, JS, MongoDB, Express, NodeJS'
+    let descrSchule = 'Grammatik, Lexikon und Übungen für den online-Lateinunterricht'
+    let techSchule = 'HTML, CSS, JS, ReactJS, PHP'
+
+    const Card = ({ title, picture, descr, tech }) => {
+        return (
+            <div className="block">
+                <h2 className="">{title}</h2>
+                <div>
+                    <img src={picture} className="card-image" ></img>
+                </div>
+                <div>
+                <p className="descr">{descr}</p>
+                <p className="descr">{tech}</p>
+                </div>
+            </div>
+        )
+    }
+
     return (
-        <React.Fragment>
-            <div >
-            <h1>Projekte</h1>
-<<<<<<< HEAD
-            <div className="test">
-                Hallo There!
-            </div>
-=======
-           
->>>>>>> e3f64177522c005dc28ecb7414d02a5c309e50aa
-            </div>
-        </React.Fragment>
+            <>
+                <h1>Projekte</h1>
+                <div className="projekte">
+                    <Card title={'SurveyApp'} picture={logoSurvey} descr={descrSurvey} tech={techSurvey} />
+                    <Card title={'SchulApp'} picture={logoSchule} descr={descrSchule} tech={techSchule} />
+                </div>
+            </>
     )
 }
 

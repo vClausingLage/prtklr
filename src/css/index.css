@@ -3,14 +3,42 @@
 * {
     @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
     font-family: 'Raleway', sans-serif;
-    background-color:   #17426d  ;   /*  #1c3647   #959595   */
-    z-index: 0;
+    /* background-color:   #17426d  ;     #1c3647   #959595   */
 }
 
-h1, h2, h3 {
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
     font-weight: normal;
     color: white;
-    z-index: 1;
+    transform: rotate(-2deg);
+    padding-left: 2rem;
+}
+h1:after {
+    background: none repeat scroll 0 0 rgb(255, 94, 0);
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 0.1rem;
+    position: relative;
+    width: 22rem;
+}
+h2, h3 {
+    font-weight: normal;
+    color: white;
+}
+
+p {
+    font-size: larger;
+}
+
+.background {    /* TUT: https://edavis.github.io/2018/02/04/create-an-angled-background-in-css/ */
+    background-image: linear-gradient(178deg, #1c3647 11rem, #294d64 calc(11rem + 5px));
+    width: 100%;
+    min-height: 100vh;
 }
 
 /* LISTS */
@@ -48,6 +76,10 @@ ul {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.navActive {
+    color:rgb(255, 94, 0);
+}
+
 /* INDEX WELCOME*/
 
 .grid {
@@ -74,12 +106,19 @@ ul {
     min-width: 1fr;
 }
 
-img {
+.profile-image {
     max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.profile {
+    margin-top: 10rem;
 }
 
 
 .typewriter p {
+    padding: 0 1.5rem 0 1.5rem;
     color: white;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(255, 94, 0); /* The typwriter cursor */
@@ -103,57 +142,47 @@ img {
     50% { border-color: rgb(255, 94, 0); }
 }
 
-h1:after {
-    background: none repeat scroll 0 0 rgb(255, 94, 0);
-    bottom: -1px;
-    content: "";
+/* SKILLS */
+
+.tableText {    
+    color: white;
+}
+
+td {
+    font-size: 1rem;
+    margin: 0;
+
+}
+
+.build {
+    display: flex;
+    justify-content: center;
+}
+
+.skills {
+    margin-top: 7rem;
+}
+
+.tool {
+    margin-right: 70px;
+}
+
+/* PROJEKTE */
+
+.card-image {
+    max-width: 600px;
+}
+
+.descr {
+    color: white;
+}
+
+.projekte {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.block {
     display: block;
-    height: 0.1rem;
-    position: relative;
-    width: 22rem;
 }
-    .tableText {    
-    color: white;
-}
-
-.navActive {
-    color:rgb(255, 94, 0);
-}
-<<<<<<< HEAD
-
-
-.test {                 /* TUT: https://edavis.github.io/2018/02/04/create-an-angled-background-in-css/ */
-    position: absolute;
-    background-image: linear-gradient(176deg, #1c3647 70%, #F4F4F4 calc(70% + 5px));
-    width: 100%;
-    height: 200px;
-}
-
-
-
-.navbar {
-    position: inline;
-    height: 0;
-    padding: 2rem 1rem 3.5rem 1rem;
-}
-.navbar > div > .right {
-    display: inline;
-    float: right;
-    font-size: large;
-    color: white;
-    text-decoration: none;
-    margin: 0rem 1rem 0rem 1rem;
-}
-.navbar > div > .left {
-    display: inline;
-    float: left;
-    font-size: large;
-    color: white;
-    text-decoration: none;
-    margin: 0rem 1rem 0rem 1rem;
-}
-.navbar > div > *:hover {
-    color: rgba(255, 255, 255, 0.5);
-}
-=======
->>>>>>> e3f64177522c005dc28ecb7414d02a5c309e50aa
