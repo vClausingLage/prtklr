@@ -5,9 +5,6 @@ import FlashOnIcon from '@material-ui/icons/FlashOn'
 import StorageIcon from '@material-ui/icons/Storage'
 import BuildIcon from '@material-ui/icons/Build'
 
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-
 function About () {
     return (
         <>

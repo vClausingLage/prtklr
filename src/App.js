@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  NavLink
 } from "react-router-dom"
 import Home from './components/home'
 import Skills from './components/skills'
@@ -11,40 +11,20 @@ import CV from './components/cv'
 import Projekte from './components/projekte'
 import Footer from './components/footer'
 
-//import HomeIcon from '@material-ui/icons/Home'
-//import AccountCircleIcon from '@material-ui/icons/AccountCircle'
-//import SchoolIcon from '@material-ui/icons/School'
-//import BuildIcon from '@material-ui/icons/Build'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
 const App = () => {
-
-  const tabs = [
-    ["left","/","clausing-lage"],
-    //["right","cv","CV"],
-    ["right","projekte","Projekte"],
-    ["right","skills","Skills"],
-  ]
-
-  function tabClick(index){
-    let n = tabs.length
-    for (let i = 0; i < n; i++) {
-      document.getElementById("links" + i).style.color = "white"
-    }
-    document.getElementById("links" + index).style.color = "rgb(255, 94, 0)"
-  }
-
-  useEffect(()=> {
-    document.getElementById("links0").style.color = "rgb(255, 94, 0)"
-  })
 
   return (
     <Router>
       <div className="background">
         <nav className="navbar">
-        {tabs.map((element, index) =>
-            <Link id={`links${index}`} key={index} className={`${element[0]}`} to={`${element[1]}`} onClick={e => tabClick(index)}>{element[2]}</Link>
-        )}
-        
+          <NavLink to="/home" className="left" activeStyle={{ color: "rgb(255, 94, 0)" }}>clausing-lage</NavLink>
+          <a href="https://github.com/vClausingLage" target="_blank" className="right social"><GitHubIcon style={{ color: '#161b22'}} /></a>
+          <a href="https://www.linkedin.com/feed/" target="_blank" className="right social"><LinkedInIcon style={{ color: '#56a5da'}} /></a>
+          <NavLink to="/projekte" className="right" activeStyle={{ color: "rgb(255, 94, 0)" }}>Projekte</NavLink>
+          <NavLink to="/skills" className="right" activeStyle={{ color: "rgb(255, 94, 0)" }}>Skills</NavLink>
         </nav>
 
         <Switch>
@@ -61,8 +41,8 @@ const App = () => {
             <Home />
           </Route>
         </Switch>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }

@@ -1,6 +1,1 @@
-* Farbe der Icons!
-* FLEX Index
-* Schriftfarbe
-* @media navbar
-* Bild
-* Schrift um Bild
+* for mobile HOME PAGE neu ordnen
