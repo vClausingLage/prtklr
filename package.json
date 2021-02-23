@@ -1,6 +1,7 @@
 {
   "name": "prtklr",
   "version": "0.1.0",
+  "homepage": "https://prtklr.de",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",

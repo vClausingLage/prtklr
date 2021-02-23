@@ -20,7 +20,7 @@ const App = () => {
     <Router>
       <div className="background">
         <nav className="navbar">
-          <NavLink to="/home" className="left" activeStyle={{ color: "rgb(255, 94, 0)" }}>clausing-lage</NavLink>
+          <NavLink to="/" exact={true} className="left" activeStyle={{ color: "rgb(255, 94, 0)" }}>clausing-lage</NavLink>
           <a href="https://github.com/vClausingLage" target="_blank" className="right social"><GitHubIcon style={{ color: '#161b22'}} /></a>
           <a href="https://www.linkedin.com/feed/" target="_blank" className="right social"><LinkedInIcon style={{ color: '#56a5da'}} /></a>
           <NavLink to="/projekte" className="right" activeStyle={{ color: "rgb(255, 94, 0)" }}>Projekte</NavLink>
@@ -28,16 +28,16 @@ const App = () => {
         </nav>
 
         <Switch>
-          <Route path="/skills">
+          <Route path="/skills" component={ Skills }>
             <Skills />
           </Route>
-          <Route path="/cv">
+          <Route path="/cv" component={ CV }>
             <CV />
           </Route>
-          <Route path="/projekte">
+          <Route path="/projekte" component={ Projekte }>
             <Projekte />
           </Route>
-          <Route path="/">
+          <Route path="/" component={ Home }>
             <Home />
           </Route>
         </Switch>
