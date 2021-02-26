@@ -18,7 +18,7 @@ function About () {
                 <tbody>
                     <tr><td ><EditIcon style={{color: 'green'}}/></td><td className="tableText"><p>HTML | ReactJS</p></td></tr>
                     <tr><td ><FormatPaintIcon style={{color: 'red'}}/></td><td className="tableText"><p>CSS</p></td></tr>
-                    <tr><td ><FlashOnIcon style={{color: 'yellow'}}/></td><td className="tableText"><p>JavaScript<br></br>Python<br></br>PHP</p></td></tr>
+                    <tr><td ><FlashOnIcon style={{color: 'yellow'}}/></td><td className="tableText"><p>JavaScript<br></br>NodeJS | Express<br></br>Python<br></br>PHP</p></td></tr>
                     <tr><td ><StorageIcon style={{color: 'black'}}/></td><td className="tableText"><p>mySQL | MongoDB</p></td></tr>
                 </tbody>
                 </table>
