@@ -17,7 +17,7 @@ function CV() {
             </div>
             <div className="flex">
                 <figure className="pictures">
-                    <img src={attempto} loading='lazy' />
+                    <img src={attempto} />
                     <figcaption>Mein Motto: attempto!</figcaption>
                 </figure>
                 <figure className="pictures">
