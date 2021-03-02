@@ -9,7 +9,7 @@ function Home () {
                     <img src={profile} alt="Profilbild" className="profile-image"/>
                 </div>
                 <div className="flex-item typewriter">
-                    <p>Herzlich willkommen! <br></br></p>
+                    <p>Herzlich willkommen!</p>
                 </div>
             </div>
         </>

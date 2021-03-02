@@ -7,7 +7,7 @@ import {
 } from "react-router-dom"
 import Home from './components/home'
 import Skills from './components/skills'
-import CV from './components/cv'
+import Interessen from './components/interessen'
 import Projekte from './components/projekte'
 import Footer from './components/footer'
 
@@ -31,8 +31,8 @@ const App = () => {
           <Route path="/skills" component={ Skills }>
             <Skills />
           </Route>
-          <Route path="/cv" component={ CV }>
-            <CV />
+          <Route path="/interessen" component={ Interessen }>
+            <Interessen />
           </Route>
           <Route path="/projekte" component={ Projekte }>
             <Projekte />
