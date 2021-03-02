@@ -21,11 +21,11 @@ const App = () => {
       <div className="background">
         <nav className="navbar">
           <NavLink to="/" exact={true} className="left" activeStyle={{ color: "rgb(255, 94, 0)" }}>clausing-lage</NavLink>
-          <a href="https://github.com/vClausingLage" target="_blank" className="right social"><GitHubIcon /></a>
-          <a href="https://www.linkedin.com/feed/" target="_blank" className="right social"><LinkedInIcon /></a>
-          <NavLink to={'/interessen'} className="right" activeStyle={{ color: "rgb(255, 94, 0)" }}>Interessen</NavLink>
-          <NavLink to="/projekte" className="right" activeStyle={{ color: "rgb(255, 94, 0)" }}>Projekte</NavLink>
           <NavLink to="/skills" className="right" activeStyle={{ color: "rgb(255, 94, 0)" }}>Skills</NavLink>
+          <NavLink to="/projekte" className="right" activeStyle={{ color: "rgb(255, 94, 0)" }}>Projekte</NavLink>
+          <NavLink to={'/interessen'} className="right" activeStyle={{ color: "rgb(255, 94, 0)" }}>Interessen</NavLink>
+          <a href="https://www.linkedin.com/feed/" target="_blank" className="right social"><LinkedInIcon /></a>
+          <a href="https://github.com/vClausingLage" target="_blank" className="right social"><GitHubIcon /></a>
         </nav>
 
         <Switch>
