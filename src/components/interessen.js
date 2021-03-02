@@ -13,7 +13,7 @@ function CV() {
             <h1>... in der Freizeit</h1>
             <div>
             <div className="freizeit">
-                <p>In meiner Freizeit zeiht es mich in die Lüfte. Motorisiert oder nicht.</p>
+                <p>In meiner Freizeit zieht es mich in die Lüfte. Motorisiert oder nicht.</p>
             </div>
             <div className="flex">
                 <figure className="pictures">
