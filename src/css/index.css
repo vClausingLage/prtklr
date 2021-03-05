@@ -3,7 +3,6 @@
 * {
   @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
   font-family: 'Raleway', sans-serif;
-  /* background-color:   #17426d  ;     #1c3647   #959595   */
 }
 
 html,
@@ -42,53 +41,97 @@ p {
   margin-right: 1rem;
 }
 
-.background {
-  /* TUT: https://edavis.github.io/2018/02/04/create-an-angled-background-in-css/ */
-  background-image: linear-gradient(
-    178deg,
-    #1c3647 11rem,
-    #294d64 calc(11rem + 5px)
-  );
-  width: 100%;
-  min-height: 95vh;
+@media (min-width: 10rem) {
+  .background {
+    /* TUT: https://edavis.github.io/2018/02/04/create-an-angled-background-in-css/ */
+    background-image: linear-gradient(
+      178deg,
+      #1c3647 17rem,
+      #294d64 calc(17rem + 5px)
+    );
+    width: 100%;
+    min-height: 95vh;
+  }
+
+  .profile-image {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    /* margin-bottom: 3rem; */
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+    padding: 2rem 1rem 3.5rem 1rem;
+  }
+
+  .navbar > .left,
+  .navbar > .right {
+    margin: 0.1rem;
+    background-color: #294d64;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar > *:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+@media (min-width: 40rem) {
+  .background {
+    /* TUT: https://edavis.github.io/2018/02/04/create-an-angled-background-in-css/ */
+    background-image: linear-gradient(
+      178deg,
+      #1c3647 14rem,
+      #294d64 calc(14rem + 5px)
+    );
+    width: 100%;
+    min-height: 95vh;
+  }
+
+  .profile-image {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+    /* margin-bottom: 3rem; */
+  }
+
+  .navbar {
+    display: flex;
+    padding: 2rem 1rem 3.5rem 1rem;
+  }
+  .navbar > .right {
+    display: flex;
+    margin-right: 0;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    margin: 0rem 1rem 0rem 1rem;
+    font-size: larger;
+    background-color: transparent;
+  }
+  .navbar > .left {
+    flex: 1;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    margin: 0rem 1rem 0rem 1rem;
+    font-size: larger;
+    background-color: transparent;
+  }
+  .navbar > *:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 /* LISTS */
 
 ul {
   list-style: none;
-}
-
-/* NAVIGATION */
-
-.navbar {
-  display: flex;
-  height: 0;
-  padding: 2rem 1rem 3.5rem 1rem;
-}
-.navbar > .right {
-  display: flex;
-  margin-right: 0;
-  font-size: large;
-  color: white;
-  text-decoration: none;
-  margin: 0rem 1rem 0rem 1rem;
-  font-size: larger;
-}
-.navbar > .left {
-  flex: 1;
-  font-size: large;
-  color: white;
-  text-decoration: none;
-  margin: 0rem 1rem 0rem 1rem;
-  font-size: larger;
-}
-.navbar > *:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.navActive {
-  color: rgb(255, 94, 0);
 }
 
 /* INDEX WELCOME*/
@@ -113,15 +156,6 @@ ul {
 }
 .flex-item {
   display: flex;
-  max-width: 300px;
-  min-width: 1fr;
-}
-
-.profile-image {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 50%;
-  /* margin-bottom: 3rem; */
 }
 
 .profile {
@@ -138,7 +172,6 @@ ul {
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
-
 /* The typing effect */
 @keyframes typing {
   from {
@@ -148,7 +181,6 @@ ul {
     width: 100%;
   }
 }
-
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from,
@@ -229,59 +261,8 @@ td {
 .social {
   color: white;
 }
-
 .social:hover {
   opacity: 0.5;
-}
-
-@media (max-width: 700px) {
-  h1 {
-    margin-top: 6rem;
-  }
-
-  .background {
-    /* TUT: https://edavis.github.io/2018/02/04/create-an-angled-background-in-css/ */
-    background-image: linear-gradient(
-      178deg,
-      #1c3647 15rem,
-      #294d64 calc(15rem + 5px)
-    );
-    width: 100%;
-    min-height: 95vh;
-  }
-
-  .profile-image {
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: 50%;
-    /* margin-bottom: 3rem; */
-  }
-  .navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: end;
-    height: 0;
-    padding: 2rem 1rem 3.5rem 1rem;
-  }
-  .navbar > .left,
-  .navbar > .right {
-    margin: 0.1rem;
-    background-color: #294d64;
-    border-radius: 0.4rem;
-    padding: 0.3rem;
-  }
-  a:hover {
-    background-color: #294d64;
-  }
-}
-
-@media (max-width: 1050px) {
-  .profile-image {
-    max-width: 400px;
-    max-height: 400px;
-    border-radius: 50%;
-    /* margin-bottom: 3rem; */
-  }
 }
 
 /* INTERESSEN */
