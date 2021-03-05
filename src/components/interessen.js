@@ -25,23 +25,23 @@ function CV() {
                     <figcaption>Wettbewerb Farrenberg</figcaption>
                 </figure>
                 <figure className="pictures">
-                    <img src={sundown} />
+                    <img src={sundown} loading='lazy'/>
                     <figcaption>Feierabend</figcaption>
                 </figure>
                 <figure className="pictures">
-                    <img src={tripleLanding} />
+                    <img src={tripleLanding} loading='lazy'/>
                     <figcaption>homecoming</figcaption>
                 </figure>
                 <figure className="pictures">
-                    <img src={bank} />
+                    <img src={bank} loading='lazy'/>
                     <figcaption>turn</figcaption>
                 </figure>
                 <figure className="pictures">
-                    <img src={STR} />
+                    <img src={STR} loading='lazy'/>
                     <figcaption>STR RWY 25</figcaption>
                 </figure>
                 <figure className="pictures">
-                    <img src={cessna} />
+                    <img src={cessna} loading='lazy'/>
                     <figcaption>frisch geputzt</figcaption>
                 </figure>
             </div>
