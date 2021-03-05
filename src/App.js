@@ -49,7 +49,7 @@ const App = () => {
             Interessen
           </NavLink>
           <a
-            href='https://www.linkedin.com/feed/'
+            href='https://de.linkedin.com/in/dr-vincent-clausing-lage-8ba703130'
             target='_blank'
             className='right social'
           >
