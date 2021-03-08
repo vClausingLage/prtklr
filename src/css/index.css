@@ -277,6 +277,7 @@ td {
 
 .pictures > img {
   max-width: 500px;
+  vertical-align: middle;
 }
 
 figcaption {
