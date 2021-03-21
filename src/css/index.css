@@ -5,6 +5,13 @@
   font-family: 'Raleway', sans-serif;
 }
 
+/* set all colors to var */
+:root {
+  --mainOne: #1c3647;
+  --mainTwo: #294d64;
+  --secondary: #ff5e00;
+}
+
 html,
 body {
   max-width: 100%;
